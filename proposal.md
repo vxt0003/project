@@ -26,7 +26,8 @@ Ideal Outcome:
 
 
 Minimal Viable Outcome:
-- The flying controls from the tutorial implimented along with original graphics.
+- The flying controls from the tutorial implimented along with original graphics. This wouls still allow some sort of user experience
+with input control.
 
 ## Milestones
 
