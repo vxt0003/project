@@ -79,7 +79,7 @@ def pipe_score_check():
                     can_score = True
                 
 
-pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
+#pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
 pygame.init()
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
@@ -139,7 +139,7 @@ while True:
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and game_active:
                 bird_movement = 0
-                bird_movement -= 12
+                bird_movement -= 8
                 flap_sound.play()
             if event.key == pygame.K_SPACE and game_active == False:
                 game_active = True
