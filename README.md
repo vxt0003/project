@@ -7,4 +7,4 @@ Demo Video: <URL>
 GitHub Repo: [<URL>](https://github.com/vxt0003/project)
 
 ## Description
-A game based on the mechanics of Flappy Bird
+A game based on the mechanics of Flappy
