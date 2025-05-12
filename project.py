@@ -1,6 +1,7 @@
 import pygame, sys
 pygame.init()
 screen = pygame.display.set_mode((576,1024))
+clock = pygame.time.Clock()
 
 while True:
     for event in pygame.event.get():
@@ -11,4 +12,5 @@ while True:
 
 
     pygame.display.update()
+    clock.tick(120)
    
