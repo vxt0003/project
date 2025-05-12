@@ -45,7 +45,7 @@ def bird_animation():
 pygame.init()
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
-game_font = pygame.font.Font(,40)
+game_font = pygame.font.Font('Boxy-Bold.ttf',40)
 #game Variables
 gravity = 0.25
 bird_movement = 0
