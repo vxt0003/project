@@ -21,6 +21,10 @@ bird_surface = pygame.image.load('assets/bluebird-midflap.png').convert()
 bird_surface = pygame.transform.scale2x(bird_surface)
 bird_rect = bird_surface.get_rect(center = (100,512))
 
+pipe_surface = pygame.image.load('assets/pipe-green.png').convert()
+pipe_surface = pygame.transform.scale2x(pipe_surface)
+pipe_list = []
+
 while True:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
