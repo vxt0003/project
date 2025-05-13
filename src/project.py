@@ -1,5 +1,8 @@
 import pygame, sys, random
 
+def main_menu(): 
+    pygame.display.set_caption('Main Menu')
+
 def draw_floor():
 	screen.blit(floor_surface,(floor_x_pos,900))
 	screen.blit(floor_surface,(floor_x_pos + 576,900))
@@ -94,7 +97,7 @@ high_score = 0
 can_score = True
 
 
-bg_surface = pygame.image.load('assets/background-day.png').convert()
+bg_surface = pygame.image.load('assets/background-day.png').convert_alpha()
 bg_surface = pygame.transform.scale2x(bg_surface)
 
 floor_surface = pygame.image.load('assets/base.png').convert()
