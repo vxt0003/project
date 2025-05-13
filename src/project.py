@@ -80,7 +80,11 @@ def pipe_score_check():
                     can_score = False
                 if pipe.centerx < 0:
                     can_score = True
-                
+
+
+      
+
+
 pygame.init()
 pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
 pygame.mixer.music.load('march_0.mp3')

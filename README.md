@@ -1,4 +1,4 @@
-# Final Project Vanessa Trevino
+# Final Project Vanessa Trevino: Flappy Icarus
 
 ## Demo
 Demo Video: <URL>
@@ -7,4 +7,5 @@ Demo Video: <URL>
 GitHub Repo: [<URL>](https://github.com/vxt0003/project)
 
 ## Description
-A game based on the mechanics of Flappy Bird
+A game based on the mechanics of Flappy Bird, with the character Icarus as inspirtation! This game uses user input to control
+the playable character, who must avoid obstacles to gain points.
