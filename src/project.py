@@ -1,7 +1,5 @@
 import pygame, sys, random
 
-def main_menu(): 
-    pygame.display.set_caption('Main Menu')
 
 def draw_floor():
 	screen.blit(floor_surface,(floor_x_pos,900))
@@ -70,6 +68,8 @@ def update_score(score, high_score):
 	return high_score
 
 def pipe_score_check():
+     
+    
      global score, can_score
 
      if pipe_list:
@@ -81,9 +81,11 @@ def pipe_score_check():
                 if pipe.centerx < 0:
                     can_score = True
                 
-
-#pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
 pygame.init()
+pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
+pygame.mixer.music.load('march_0.mp3')
+pygame.mixer.music.play(-1)
+
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
 game_font = pygame.font.Font('Spartacus-KVdLp.ttf',70)
@@ -100,7 +102,7 @@ can_score = True
 bg_surface = pygame.image.load('assets/background-day.png').convert_alpha()
 bg_surface = pygame.transform.scale2x(bg_surface)
 
-floor_surface = pygame.image.load('assets/base.png').convert()
+floor_surface = pygame.image.load('assets/base.png').convert_alpha()
 floor_surface = pygame.transform.scale2x(floor_surface)
 floor_x_pos = 0
 
