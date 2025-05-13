@@ -115,7 +115,7 @@ pygame.time.set_timer(BIRDFLAP,200)
    # bird_surface = pygame.transform.scale2x(bird_surface)
    # bird_rect = bird_surface.get_rect(center = (100,512))
 
-pipe_surface = pygame.image.load('assets/pipe-green.png').convert()
+pipe_surface = pygame.image.load('assets/pipe-green.png').convert_alpha()
 pipe_surface = pygame.transform.scale2x(pipe_surface)
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
