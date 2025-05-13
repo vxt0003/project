@@ -49,15 +49,15 @@ def bird_animation():
 
 def score_display(game_state):
 	if game_state == 'main_game':
-		score_surface = game_font.render(str(int(score)),True,(255,255,255))
+		score_surface = game_font.render(str(int(score)),True,(0,0,0))
 		score_rect = score_surface.get_rect(center = (288,100))
 		screen.blit(score_surface,score_rect)
 	if game_state == 'game_over':
-		score_surface = game_font.render(f'Score: {int(score)}' ,True,(255,255,255))
+		score_surface = game_font.render(f'Score: {int(score)}' ,True,(0,0,0))
 		score_rect = score_surface.get_rect(center = (288,100))
 		screen.blit(score_surface,score_rect)
 
-		high_score_surface = game_font.render(f'High score: {int(high_score)}',True,(255,255,255))
+		high_score_surface = game_font.render(f'High score: {int(high_score)}',True,(0,0,0))
 		high_score_rect = high_score_surface.get_rect(center = (288,850))
 		screen.blit(high_score_surface,high_score_rect)
 
@@ -83,7 +83,7 @@ def pipe_score_check():
 pygame.init()
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
-game_font = pygame.font.Font('Boxy-Bold.ttf',40)
+game_font = pygame.font.Font('Spartacus-KVdLp.ttf',70)
 
 #game Variables
 gravity = 0.25
