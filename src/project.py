@@ -82,6 +82,7 @@ def pipe_score_check():
                     can_score = True
 
 
+
       
 
 
@@ -89,6 +90,8 @@ pygame.init()
 pygame.mixer.pre_init(frequency=44100, size=-16, channels=1, buffer=512)
 pygame.mixer.music.load('march_0.mp3')
 pygame.mixer.music.play(-1)
+pygame.mixer.music.set_volume(0.1)
+
 
 screen = pygame.display.set_mode((576,1024))
 clock = pygame.time.Clock()
@@ -145,6 +148,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_SPACE and game_active:
                 bird_movement = 0
@@ -192,8 +196,7 @@ while True:
     
         high_score = update_score(score,high_score)
         score_display('game_over')
-       # if score > high_score:
-            #high_score = score
+      
 
     floor_x_pos -= 1
     draw_floor()
