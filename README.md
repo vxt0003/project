@@ -1,7 +1,7 @@
 # Final Project Vanessa Trevino: Flappy Icarus
 
 ## Demo
-Demo Video: <URL>
+Demo Video: [<URL>](https://youtu.be/BZRpnmsM3LI)
 
 ## GitHub Repository
 GitHub Repo: [<URL>](https://github.com/vxt0003/project)
